@@ -1,3 +1,4 @@
+#include "sort.h"
 /**
  * insertion_sort_list - sorts a doubly linked list in ascending order
  * using the Insertion sort algorithm
@@ -5,10 +6,11 @@
  */
 void insertion_sort_list(listint_t **list)
 {
+    listint_t *current; 
     if (list == NULL || *list == NULL || (*list)->next == NULL)
         return;
 
-    listint_t *current = (*list)->next;
+    current = (*list)->next; /**current = (*list)->next;*/
 
     while (current != NULL)
     {
