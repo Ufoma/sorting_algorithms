@@ -17,14 +17,20 @@ typedef struct listint_s
 	struct listint_s *next;
 } listint_t;
 
+/***0-bubble_sort.c file***/
 void bubble_sort(int *array, size_t size);
+
+/****print_arry.c file****/
 void print_array(const int *array, size_t size);
+
+/*****print_list.c file*****/
 void print_list(const listint_t *list);
+
+/*****1-insertion_sort_list.c file*****/
 void insertion_sort_list(listint_t **list);
-listint_t *swap_node(listint_t *node, listint_t **list);
+void swap_nodes(listint_t **left, listint_t **right, listint_t **list);
+
+/****2-selection_sort.c file*****/
 void selection_sort(int *array, size_t size);
-void print_array(const int *array, size_t size);
-void print_list(const listint_t *list);
-void quick_sort(int *array, size_t size);
 
 #endif
