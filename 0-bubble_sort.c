@@ -9,13 +9,14 @@
 void bubble_sort(int *array, size_t size)
 {
 	size_t ind;
+	size_t i;
 	int temp; /* temporary variable for swaps */
 
 	if (size < 2) 
 /* Check if array size is less than 2 */
 	return;
 
-for (size_t i = 0; i < size; i++)
+for (i = 0; i < size; i++)
 	/* outer loop */
 {
 	for (ind = 0; ind < size - i - 1; ind++)
